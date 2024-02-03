@@ -13,13 +13,13 @@ function App() {
     return (
         <RoleContext.Provider value={role}>
             <Routes>
-                <Route path="/index.html" element={<Entry />} />
+                <Route path="/" element={<Entry />} />
                 <Route path="/main" element={<Main />} />
                 <Route
                     path="/registry"
                     element={<Registry onSelect={setRole} />}
                 />
-                <Route path="*" element={<Navigate to="/index.html" />} />
+                <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </RoleContext.Provider>
     )

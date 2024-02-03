@@ -18,7 +18,7 @@ export default function Registry({ onSelect }: Props) {
             <div>{selected}</div>
             <ul>
                 {roles.map((role) => (
-                    <li>
+                    <li key={role}>
                         <label>
                             <input
                                 type="radio"
